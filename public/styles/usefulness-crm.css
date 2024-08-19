@@ -1,0 +1,95 @@
+.usefulness-crm {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+    
+}
+
+.usefulness-crm-head{
+    margin-bottom: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.usefulness-crm-block {
+    position: relative;
+    margin-inline: auto;
+    background: linear-gradient(90deg, rgba(177, 149, 255, 0.7), rgba(177, 149, 255, 0.42), rgba(44, 48, 83, 0));
+    border-radius: 20px;
+
+    max-width: 1167px;
+    height: auto
+}
+
+.usefulness-crm-block .flex-container {
+    padding: 14px 26px;
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;    
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row p {
+    max-width: 682px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: start;
+    margin-left: 9px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.row-img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 40px;
+    height: auto;
+}
+.usefulness-smart {
+    display: none;
+}
+@media (min-width: 1400px) {
+    .usefulness-crm-block {
+        border-radius: 40px;
+    }
+
+    .usefulness-crm-block .flex-container {
+        padding-top: 57px;
+        padding-inline: 59px;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column; 
+        gap: 40px;    
+    }
+    .usefulness-crm-head{
+        margin-bottom: 46px;
+        font-size: 45px;
+        line-height: 89px;
+        margin-inline: 0;
+    }
+    .row p {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        margin-left: 9px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .usefulness-smart {
+        display: block;
+        position: absolute;
+        width: 491px;
+        height: auto;
+        top: -7%;
+        left: 70%;
+    }
+    .row-img {
+        width: 90px;
+        height: auto;
+    }
+}

@@ -1,0 +1,121 @@
+.bitrix {
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    height: auto;
+}   
+
+.bitrix .gradient-bord {
+    width: 340px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+.bitrix-block {
+    display: flex;
+    border-radius: inherit;
+    overflow: hidden;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+}
+
+.left-block {
+    background: linear-gradient(45deg, rgba(14, 157, 221, 1), rgba(167, 219, 243, 1));
+    width: 50%;
+    /* width: 50%;
+    background-size: 200% 200%; 
+    background-position: left top;  */
+}
+.right-block {
+    background-color: rgba(72, 5, 114, 0.5);
+    width: 50%;
+}
+
+.bitrix-block-first .left-block, .bitrix-block-second .left-block {
+    display: flex;
+    flex-direction: column;      
+    justify-content: center;    
+    align-items: center;  
+}
+
+.bitrix .left-block svg {
+    margin-bottom: 10px;
+}
+
+.bitrix-block .right-block {
+    display: flex;
+    flex-direction: column;       
+    align-items: left;
+}
+.bitrix-block .right-block ul{
+    margin: 10px 0px;
+    display: flex;
+    align-items: start;  
+    flex-direction: column;      
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+.bitrix-check{
+    margin-inline: 10px;
+    height: 20px;
+    width: 20px;
+    flex-shrink: 0;
+}
+.bitrix-block .right-block li{
+    color: var(--white-color);
+    text-align: left;
+    display: flex;
+    justify-content: center;    
+    flex-direction: row;       
+    align-items: left;
+}
+
+.bitrix-block .right-block li p {
+    font-weight: 400;
+    font-size: var(--font-size);
+    line-height: var(--line-heigh);
+}
+.bitrix-block .right-block h2 {
+    margin-left: 10px;
+    text-align: start;
+    margin-top: 10px;
+    font-size: 16px;
+    background: linear-gradient(180deg, rgba(177, 149, 255, 1), rgba(233, 198, 255, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%; 
+    background-position: bottom ; 
+}
+
+/* 690 */
+@media (min-width: 1400px) {
+    .bitrix .gradient-bord {
+        border-radius: 20px;
+      }
+    .bitrix-block .right-block ul{
+        gap: 20px;
+    }
+    .bitrix .gradient-bord {
+        width: 690px;
+      }
+    .bitrix-block .right-block h2 {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .bitrix .left-block svg {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 170px;
+        height: auto;
+    }
+    .bitrix-block-first .left-block svg {
+        margin-top: 20px;
+        margin-bottom: -5px;
+        width: 170px;
+        height: auto;
+    }
+}

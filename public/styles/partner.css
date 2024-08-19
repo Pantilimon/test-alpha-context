@@ -1,0 +1,256 @@
+.partner {
+  display: block;
+    height: auto;
+}
+.partner h2 {
+  margin-inline: 40px;
+}
+.partner-block{
+  height: 170.66px;
+  position: relative;
+  margin-bottom: 57.84px;
+}
+.histogram-container {
+  background-color: rgba(153, 69, 255, 1);
+  width: 265.1px;
+  height: 135.31px;
+  position: absolute;
+  top: 50%;
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dotted-gradient-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#histogram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bitrix-container{
+  top: 16%;
+  left: calc(0px - 22.57px - 16.67px);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  width: 165.2px;
+  height: 69.6px;
+}
+#bitrix24 {
+  position: absolute;
+  margin-inline: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.AMO-container{
+  transform: translate(-100%, 0%);
+  top: 49%;
+  left: calc(100% + 22.57px + 16.67px);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  width: 139.18px;
+  height: 51.91px;
+}
+#AMO {
+  position: absolute;
+  margin-inline: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lines {
+  width: 100%;
+  /* height: 270px; */
+  border-top: 1px solid ; 
+  /* border-color: rgba(0, 255, 183, 1); */
+  border-image: linear-gradient(rgba(0, 255, 183, 1), rgba(215, 149, 255, 1)) 1;
+}
+
+.lines-row {
+  display: flex;
+  align-items: center; /* Вертикальное центрирование */
+  justify-content: center;
+  justify-content: space-between;
+  height: 54px;
+  /* border-top: 1px solid; */
+  border-bottom: 1px solid ; 
+  border-image: linear-gradient(0deg, rgba(0, 255, 183, 1), rgba(215, 149, 255, 1)) 1;
+  /* border-color: rgba(0, 255, 183, 1); */
+}
+
+.lines-row-text {
+  margin: 0px;
+  font-family: "play";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 54px;
+}
+
+.lines-row-svg {
+  margin-right: 8.25px;
+}
+
+
+@media (min-width: 1400px) {
+  .lines {
+    width: 787.25px;
+    order: 1;
+  }
+  .lines-row {
+    height: 135px;
+  }
+  .partner-container {
+    height: 270px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .partner-block {
+    /* display: none; */
+    order: 2;
+    transform: scale(1.58);
+    left: 330px;
+    top: 55px;
+  }
+  .lines-row-text {
+    margin: 0px;
+    font-family: "play";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .partner {
+  display: block;
+    height: auto;
+}
+.partner h2 {
+  margin-inline: 40px;
+}
+.partner-block{
+  height: 170.66px;
+  position: relative;
+  margin-bottom: 57.84px;
+}
+.histogram-container {
+  background-color: rgba(153, 69, 255, 1);
+  width: 265.1px;
+  height: 135.31px;
+  position: absolute;
+  top: 50%;
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+#dotted-gradient-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#histogram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bitrix-container{
+  top: 16%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  width: 165.2px;
+  height: 69.6px;
+}
+#bitrix24 {
+  position: absolute;
+  margin-inline: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bitrix-container-svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.AMO-container{
+  transform: translate(-100%, 0%);
+  top: 49%;
+  left: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 16px;
+  width: 139.18px;
+  height: 51.91px;
+}
+#AMO {
+  position: absolute;
+  margin-inline: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.AMO-container-svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.lines {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid ; 
+  border-image: linear-gradient(0deg, rgba(0, 255, 183, 1), rgba(215, 149, 255, 1)) 1;
+}
+
+.lines-row {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  justify-content: space-between;
+  height: 54px;
+  border-top: 1px solid;
+  border-image: linear-gradient(180deg, rgba(0, 255, 183, 1), rgba(215, 149, 255, 1)) 1;
+}
+
+.lines-row-text {
+  margin: 0px;
+}
+
+.lines-row-svg {
+  margin-right: 8.25px;
+} */

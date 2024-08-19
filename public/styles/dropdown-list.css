@@ -1,0 +1,93 @@
+
+/* *******************
+Select c dropdown на JS
+******************* */
+.form-group {
+	width: 100%;
+}
+.dropdown {
+	position: relative;
+}
+
+.dropdown__button {
+	position: relative;
+	display: block;
+	text-align: left;
+	padding-right: 35px;
+
+
+	cursor: pointer;
+}
+
+.dropdown__button:focus, .dropdown__button--active {
+	outline: none;
+}
+
+.dropdown__button::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+
+	/* Рисуем треугольник */
+    width: 0;
+    height: 0;
+    border-width: 10.4px 6px 0 6px;
+    border-color: var(--white-color) transparent transparent transparent;
+	border-style: solid;
+
+	/* Снимаем клик с треугольника */
+	pointer-events: none;
+}
+
+
+.dropdown__list {
+	z-index: 99;
+	display: none;
+	color: var(--white-color);
+
+	position: absolute;
+	left: 0;
+	top: 52px;
+
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	background: #3f0569;
+	overflow: hidden;
+
+	border-radius: 10px;
+	width: 100%;
+
+	z-index: 1;
+}
+
+.dropdown__list--visible {
+	display: block;
+}
+
+.dropdown__list-item {
+	margin: 0;
+	padding: 0;
+	border-bottom: 0px;
+	padding: 7px 20px;
+	cursor: pointer;
+}
+
+.dropdown__list-item:first-child {
+	border-radius: 10px 10px 0 0;
+}
+
+.dropdown__list-item:last-child {
+	border-radius: 0 0 10px 10px;
+}
+
+.dropdown__list-item:hover {
+	background: rgba(176, 198, 225, 0.26);
+}
+
+.dropdown__input-hidden {
+	display: none;
+}

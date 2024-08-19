@@ -1,0 +1,109 @@
+.CRM-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--container-margin-bottom);
+    padding-inline: 30px;
+    margin-inline: auto;
+    overflow: visible;
+}
+.CRM-head {
+    height: 40px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+.CRM-head h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0px;
+}
+
+.capa-image {
+    position: absolute;
+}
+.capa-image-svg {
+    margin-top: 40px;
+    width: 100vw;
+    overflow: visible;
+}
+
+.CRM-image-container {
+    height: auto;
+    width: 340px;
+    padding: 20px auto 20px;
+    z-index: 1;
+}
+.CRM-image {
+    width: 100%;
+    height: auto;
+    z-index: 99;
+}
+
+.CRM-button {
+    padding: 10px 40px; 
+    border-radius: 20px;
+    background-color: rgba(177, 149, 255, 0.5);
+}
+.CRM-button p{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.capa-image-svg-full {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .capa-image-svg-mob {
+        display: none;
+    }
+    .capa-image-svg-full {
+        margin-top: -150px;
+        display: block;
+    }
+    .CRM-image-container {
+        width: 500px;
+        padding: auto 20px;
+    }
+    
+}
+@media (min-width: 980px) {
+    .CRM-head {
+        height: 89px;
+        margin-bottom: 20px;
+    }
+    .CRM-head h1{
+        font-size: 64px;
+        line-height: 89px;
+    }
+    
+    .CRM-image-container {
+        width: 600px;
+        padding: auto 0px;
+    }
+    .capa-image-svg-full {
+        margin-top: -150px;
+        display: block;
+    }
+    .CRM-button {
+        padding: 20px 40px; 
+        border-radius: 20px;
+    }
+    .CRM-button p{
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+}
+@media (min-width: 1400px) {
+    .CRM-image-container {
+        width: 704.88px;
+        padding: auto 20px;
+    }
+    .capa-image-svg-full {
+        margin-top: -180px;
+        display: block;
+    }
+}

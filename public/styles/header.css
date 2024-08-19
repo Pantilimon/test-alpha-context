@@ -1,0 +1,287 @@
+.header {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Play', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 36px;
+    padding-inline: 16px;
+    padding-top: 16px;
+    padding-bottom: 3.97px;
+}
+#header-fixed {
+    display: none;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Play', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 36px;
+    padding-inline: 16px;
+    padding-top: 16px;
+    padding-bottom: 3.97px;
+}
+.number {
+    font-family: "Inter";
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+    justify-content: space-between;
+}
+.number svg, .header-button{
+    display: none;
+}
+.number p{
+    margin-bottom: 0px;
+    line-height: 13.31px;
+}
+.router {
+    height: 36px !important;
+    display: flex;
+    align-items: center; 
+    column-gap: 11px;
+    margin-bottom: 34px !important;
+    padding-left: 8px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.router p{
+    font-weight: 400;
+    line-height: 12px;
+    /* font-size: 12px; */
+    margin-bottom: 0px;
+}
+.burger {
+    height: 44px;
+    display: flex;
+    align-items: center; 
+    gap: 17px;
+    padding-inline: 16px;
+}
+.input-field {
+    gap: 10px;
+    height: 25px;
+    padding-inline: 10px;
+    align-items: center; 
+    display: flex;
+    background: linear-gradient(45deg, #7062a6, #624e92);
+    border-radius: 25px;
+    width: calc(100% - 30px - 17px);
+}
+/* linear-gradient(45deg, #7062a6, #624e92) */
+.burger .input {
+    background: none;
+    width: calc(100% - 12px - 10px - 10px - 12px);
+    border: none;  
+    outline: none;  
+    padding: 0;     
+    margin: 0;     
+}
+.header-menu-list{
+    display: none;
+    column-gap: 24px;
+}
+.header-menu-list a:hover{
+    text-shadow: 0 0 10px rgba(215, 149, 255, 1);
+}
+.header-menu-list button{
+    display: inline-flex; /* Выравнивание SVG внутри кнопки */
+    all: unset;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
+.header-menu-button {
+    height: 18px;
+    width: 18px;;
+}
+
+.header-menu-item a {
+    color: rgba(233, 222, 255, 1);
+    padding: 12px;
+
+}
+.header-logo {
+    display: flex;
+    align-items: center; 
+}
+@media (min-width: 640px) {
+    #header-fixed {
+        top: -100px;
+        z-index: 100;
+        width: 100%;
+        position: fixed;
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Play', sans-serif;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        height: 36px;
+        padding-inline: 16px;
+        padding-top: 16px;
+        padding-bottom: 3.97px;
+        padding: 0;
+        padding-inline: 20px;
+        height: 64px;
+        font-size: 16px;
+        line-height: 23px;
+        background-color: rgba(29, 1, 65, 0.3);
+    }
+    #header-fixed.visible {
+        top: 0; /* Показываем блок, когда класс "visible" добавлен */
+    }
+    .header {
+        padding: 0;
+        padding-inline: 20px;
+        height: 79px;
+        font-size: 16px;
+        line-height: 23px;
+        background-color: rgba(29, 1, 65, 0.3);
+    }
+    .header-logo svg{
+        width: 150px;
+        height: auto;
+    }
+    .number svg, .number p{
+        display: none;
+    }
+    .burger {
+        display: none;
+    }
+    .router {
+        margin-top: 10px;
+    }
+    .header-menu-list {
+        column-gap: 0px;
+        display: flex;
+    }
+    
+    .header-button {
+        display: block;
+    }
+    .header-button p, .header-button svg{
+        display: block;
+    }
+    .header-button .shadow-button {
+        gap: 10px;
+        display: flex;
+        padding: 10px 10px;
+    }
+
+    .header-menu-item a{
+        padding: 6px;
+    }
+}
+@media (min-width: 720px) {
+    .header-menu-item a{
+        padding: 12px;
+    }
+    .header-button .shadow-button {
+        gap: 20px;
+        display: flex;
+        padding: 10px 20px;
+    }
+    .router {
+        padding-left: 18px;
+    }
+}
+@media (min-width: 980px) {
+    .header-menu-list {
+        column-gap: 12px;
+        display: flex;
+    }
+    .router {
+        padding-left: 100px;
+    }
+    
+}
+
+@media (min-width: 1400px) {
+    .header {
+        padding: 0;
+        padding-inline: 20px;
+        height: 79px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    #header-fixed {
+        padding: 0;
+        padding-inline: 20px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .header-menu-list{
+        column-gap: 24px;
+    }
+    .header-logo svg{
+        /* scale: 1; */
+        width: 221.67px;
+        height: auto;
+    }
+    .number svg, .number p{
+        display: block;
+    }
+    .number {
+        display: flex;
+    }
+    .header-menu-item a{
+        padding: 12px;
+    }
+    .header-button .shadow-button {
+        gap: 20px;
+        display: flex;
+        padding: 15px 20px;
+        margin-left: 22px;
+    }
+    .router {
+        margin-bottom: 134px !important;
+    }
+}
+
+.side-menu {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48px;
+    height: 94px;
+    background-color: rgba(29, 1, 65, 0.3);
+    border-radius: 15px 0px 0px 15px;
+    top: 20%;
+    right: -0%;
+    justify-content: center;
+
+}
+.side-menu svg{
+    filter: 
+    drop-shadow(0 0 1.52px rgba(0, 255, 225, 1))
+    drop-shadow(0 0 3.03px rgba(0, 255, 225, 1))
+    drop-shadow(0 0 10.62px rgba(0, 255, 225, 1))
+    drop-shadow(0 0 21.24px rgba(0, 255, 225, 1))
+    drop-shadow(0 0 36.4px rgba(0, 255, 225, 1))
+    drop-shadow(0 0 63.71px rgba(0, 255, 225, 1));
+}
+
+.side-menu-container {
+    height: 34px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.side-menu-container-1 {
+    border-bottom: solid rgba(236, 236, 236, 1) 1px;
+    align-items: start;
+}
+.side-menu-container-2 {
+    align-items: end;
+}

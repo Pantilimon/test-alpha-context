@@ -1,0 +1,182 @@
+.write-us {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 0px;
+    height: auto;
+}
+
+.write-us-heading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    margin: 0px;
+    font-weight: 700;
+}
+.write-us-heading p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    margin-inline: 36px;
+    margin-bottom: 8px;
+}
+
+.write-us-img {
+    width: 100px;
+    height: 100px;
+    margin-inline: auto;
+}
+
+.write-us .item {
+    position: absolute;
+    z-index: -1;
+    top: 251px
+}
+
+.write-us-from {
+    padding-top: 21.88px;
+    padding-inline: 17.8px;
+    background: linear-gradient(225deg, #3e3391, #593296);
+    width: 246.75px;
+    height: 252px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.write-us-from form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8.75px;
+}
+.write-us-from button {
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.write-us-from button p{
+    text-align: left;
+    font-size: 16px;
+    font-family: "Play";
+    font-weight: 400;
+    line-height: 16px;
+}
+.write-us-from form input, .write-us-from form textarea{
+    height: 26.25px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(56, 56, 56, 1);
+    width: 100%;
+    border-radius: 5px;
+    appearance: none;
+    border: solid #75719c 1px;
+    background-color: #a99acc;
+    outline: none;
+    padding-inline: 10.5px;
+  }
+
+  
+  .write-us-from form textarea{
+    resize: none;
+    overflow: hidden;
+    height: 72px;
+  }
+
+.write-us-from form input::placeholder{
+    color: rgba(56, 56, 56, 1);   
+    font-size: 14px;
+    font-weight: 400;
+}
+.write-us .item-full {
+    display: none;
+}
+
+
+@media (min-width: 980px) {
+    .write-us {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .write-us .item {
+        display: none;
+    }
+    .write-us .item-full {
+        position: absolute;
+        display: block;
+        top: 70px;
+        z-index: -1;
+    }
+    .write-us-from {
+        padding-top: 50px;
+        padding-inline: 40px;
+        width: 564px;
+        height: 576px;
+        margin-bottom: 44px;
+    }
+    .write-us-from form {
+        gap: 20px;
+        width: 100%;
+    }
+    .write-us-from form input, .write-us-from form textarea{
+        border: 1px;
+        font-size: 16px;
+        height: 60px;
+        width: 100%;
+        padding-inline: 25px;
+      }
+    
+    .write-us-from form input::placeholder{
+        font-size: 16px;
+    }
+    .write-us-from form textarea{
+        height: 165px;
+      }
+    .write-us-from button {
+        border-radius: 19.17px;
+        width: 195px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 4px;
+    }
+    .write-us-from button p{
+        font-size: 20px;
+        line-height: 23.14px;
+    }
+    .write-us-heading {
+        width: 700px;
+        padding-left: 100px;
+        /* text-align: left; */
+        margin-top: 220px;
+    }
+    .write-us-heading h1{
+        justify-content: start;
+        margin: 0;
+        margin-bottom: 60px;
+        width: 100%;
+        text-align: left;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700;
+    }
+    .write-us-heading p{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 700;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 57px;
+    }
+    .comand {
+        width: 1000px;
+        font-size: 48px;
+    }
+
+
+}

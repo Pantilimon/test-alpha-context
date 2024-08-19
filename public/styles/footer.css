@@ -1,0 +1,185 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 106.5px;
+ }
+ .footer .contacts {
+    height: auto;
+    width: 297px;
+    margin-bottom: 51px;
+}
+.footer .text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.footer .contacts p, .footer .contacts a {
+    text-align: left;
+    font-size: 24px;
+    line-height: 27.77px;
+    color: rgba(221, 221, 221, 1);
+    margin-bottom: 8px;
+}
+.footer .text a {
+    width: 100%;
+}
+.footer .gradient-bord {
+    height: 203px;
+    width: 340px;
+    background: linear-gradient(rgba(177, 149, 255, 1), rgba(215, 149, 255, 1));
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 30px 0px rgba(215, 149, 255, 1);
+    margin-bottom: 57px;
+  }
+#map {
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.footer h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37px;
+}
+.footer .logo {
+    margin-bottom: 38.29px;
+}
+.footer .social-networks {
+    justify-content: center;
+    display: flex;
+    gap: 18px;
+    margin-bottom: 21px;
+}
+.contacts .social-networks {
+    display: none;
+    justify-content: start;
+    margin-top: 57px;
+ }
+
+ .footer .politic {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 1);
+ }
+ .footer .politic p{
+    line-height: 16px;
+    font-size: 10px;
+    margin-bottom: 0;
+ }
+.footer-menu {
+    display: none !important;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.footer-menu h1{
+    font-size: 36px;
+    line-height: 41.26px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.footer-menu-list p{
+    font-size: 36px !important;
+    line-height: 41.26px;
+    font-weight: 400 !important;
+    margin-top: 36px;
+}
+
+.footer-menu-list svg {
+    margin-top: 39px;
+}
+
+
+ @media (min-width: 980px) {
+    .footer .contacts {
+        width: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .footer {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 106.5px;
+     }
+    .footer .logo, .footer .social-networks {
+        display: none;
+    }
+    .contacts .social-networks {
+        margin-top: 50px;
+        display: flex;
+        gap: 33px;
+    }
+    .contacts .social-networks svg{
+        width: 26px;
+        height: auto;
+    }
+    .footer .politic {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: rgba(255, 255, 255, 1);
+     }
+     .footer .politic p{
+        line-height: 16px;
+        font-size: 10px;
+        margin-bottom: 0;
+     }
+     .footer .politic {
+        flex-basis: 100%;
+        flex-direction: row;
+        width: 121px;
+        gap: 121px;
+
+    }
+    .footer .gradient-bord {
+        height: 300px;
+        width: 422.56px;
+        /* margin-bottom: 57px; */
+        border-radius: 15px;
+      }
+      #map {
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+    }
+ }
+
+ @media (min-width: 1400px) {
+    .footer-menu {
+        display: block !important;
+    }
+    .footer .contacts {
+        width: 600px;
+    }
+    .footer .gradient-bord {
+        height: 346px;
+        width: 522.56px;
+        /* margin-bottom: 57px; */
+      }
+      #map {
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+    }
+    .footer {
+        padding-bottom: 100px;
+    }
+ }
+
+ @media (min-width: 1600px) {
+    .footer .contacts {
+        width: 857px;
+    }
+ }
